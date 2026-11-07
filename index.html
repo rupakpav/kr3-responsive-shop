@@ -10,12 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Главная — mouseshop">
     <meta property="og:description" content="mouseshop — учебный магазин проводных и беспроводных компьютерных мышей.">
-    <meta property="og:image" content="https://rupakpav.github.io/kr1-html-css-shop/images/preview.jpg">
+    <meta property="og:image" content="images/g305-960.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js" defer>
     </script>
   </head>
   <body id="top">
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
     <header class="site-header">
       <div class="site-header__inner">
         <a class="site-header__logo" href="index.html">
@@ -52,28 +54,34 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main" tabindex="-1">
       <section class="hero">
-        <p class="hero__eyebrow">
-          Мыши для работы и игры
-        </p>
-        <h1 class="hero__title">
-          mouseshop
-        </h1>
-        <p class="hero__description">
-          Выберите удобную мышь: сравните модели, посмотрите характеристики и оставьте заявку.
-        </p>
-        <div class="hero__actions">
-          <a class="button button--primary" href="catalog.html">
-            Перейти в каталог
-          </a>
-          <a href="#popular">
-            Популярные модели
-          </a>
-          <a href="#advantages">
-            Преимущества
-          </a>
+        <div class="hero__content">
+          <p class="hero__eyebrow">
+            Мыши для работы и игры
+          </p>
+          <h1 class="hero__title">
+            Удобство в каждом движении
+          </h1>
+          <p class="hero__description">
+            Выберите удобную мышь: сравните модели, посмотрите характеристики и оставьте заявку.
+          </p>
+          <div class="hero__actions">
+            <a class="button button--primary" href="catalog.html">
+              Перейти в каталог
+            </a>
+            <a href="#popular">
+              Популярные модели
+            </a>
+            <a href="#advantages">
+              Преимущества
+            </a>
+          </div>
         </div>
+        <picture>
+          <source type="image/webp" srcset="images/g305-480.webp 480w, images/g305-960.webp 960w" sizes="(min-width: 1280px) 556px, (min-width: 900px) calc((100vw - 152px) / 2), calc(100vw - 80px)">
+          <img class="hero__image" src="images/g305-960.jpg" srcset="images/g305-480.jpg 480w, images/g305-960.jpg 960w" sizes="(min-width: 1280px) 556px, (min-width: 900px) calc((100vw - 152px) / 2), calc(100vw - 80px)" alt="Беспроводная мышь Logitech G305 в чёрном цвете" width="960" height="720" fetchpriority="high">
+        </picture>
       </section>
       <section class="section" id="advantages">
         <h2 class="section__title">
@@ -97,7 +105,7 @@
         </h2>
         <div class="products-grid">
           <article class="product-card">
-            <img class="product-card__image" src="images/g102.svg" alt="Условная иллюстрация мыши Logitech G102" width="400" height="260" loading="lazy">
+            <img class="product-card__image" src="images/g102-480.jpg" srcset="images/g102-480.jpg 480w, images/g102-960.jpg 960w" sizes="(min-width: 1280px) 355px, (min-width: 1024px) calc((100vw - 198px) / 3), (min-width: 768px) calc((100vw - 148px) / 2), (min-width: 640px) calc((100vw - 116px) / 2), calc(100vw - 66px)" alt="Чёрная мышь Logitech G102 на светлом фоне" width="960" height="720" loading="lazy">
             <h3 class="product-card__title">
               Logitech G102
             </h3>
@@ -117,7 +125,7 @@
             </div>
           </article>
           <article class="product-card">
-            <img class="product-card__image" src="images/deathadder.svg" alt="Условная иллюстрация мыши Razer DeathAdder" width="400" height="260" loading="lazy">
+            <img class="product-card__image" src="images/deathadder-480.jpg" srcset="images/deathadder-480.jpg 480w, images/deathadder-960.jpg 960w" sizes="(min-width: 1280px) 355px, (min-width: 1024px) calc((100vw - 198px) / 3), (min-width: 768px) calc((100vw - 148px) / 2), (min-width: 640px) calc((100vw - 116px) / 2), calc(100vw - 66px)" alt="Чёрная мышь Razer DeathAdder на светлом фоне" width="960" height="720" loading="lazy">
             <h3 class="product-card__title">
               Razer DeathAdder
             </h3>
@@ -137,7 +145,7 @@
             </div>
           </article>
           <article class="product-card">
-            <img class="product-card__image" src="images/rival-3.svg" alt="Условная иллюстрация мыши SteelSeries Rival 3" width="400" height="260" loading="lazy">
+            <img class="product-card__image" src="images/rival-3-480.jpg" srcset="images/rival-3-480.jpg 480w, images/rival-3-960.jpg 960w" sizes="(min-width: 1280px) 355px, (min-width: 1024px) calc((100vw - 198px) / 3), (min-width: 768px) calc((100vw - 148px) / 2), (min-width: 640px) calc((100vw - 116px) / 2), calc(100vw - 66px)" alt="Чёрная мышь SteelSeries Rival 3 на светлом фоне" width="960" height="720" loading="lazy">
             <h3 class="product-card__title">
               SteelSeries Rival 3
             </h3>
@@ -169,6 +177,9 @@
           Посмотреть все шесть моделей
         </a>
       </aside>
+      <p class="success-message" role="status" tabindex="-1" hidden>
+        Заявка проверена успешно. Это учебная демонстрация: данные не отправлялись.
+      </p>
     </main>
     <footer class="site-footer" id="contacts">
       <p class="site-footer__text">
@@ -184,10 +195,10 @@
       <a href="order.html">
         Оставить заявку
       </a>
+      <a class="button button--primary back-to-top" href="#top">
+        Наверх ↑
+      </a>
     </footer>
-    <p class="success-message" role="status" tabindex="-1" hidden>
-      Заявка проверена успешно. Это учебная демонстрация: данные не отправлялись.
-    </p>
     <dialog class="order-dialog" id="order-dialog" aria-labelledby="order-dialog-title">
       <h2 class="order-dialog__title" id="order-dialog-title">
         Оформление заявки
@@ -196,11 +207,11 @@
         <p class="order-form__hint">
           Учебная форма: данные не отправляются на сервер. Все поля, кроме комментария, обязательны.
         </p>
-        <div class="order-form__field">
+        <div class="order-form__field order-form__field--wide">
           <label class="order-form__label" for="dialog-product">
             Товар
           </label>
-          <select class="order-form__select" id="dialog-product" name="product" required>
+          <select class="order-form__select" id="dialog-product" name="product" required aria-describedby="dialog-product-error">
             <option value="">
               Выберите мышь
             </option>
@@ -223,40 +234,44 @@
               HyperX Pulsefire Haste 2
             </option>
           </select>
+          <p class="order-form__error" id="dialog-product-error" hidden></p>
         </div>
         <div class="order-form__field">
           <label class="order-form__label" for="dialog-name">
             Имя
           </label>
-          <input class="order-form__input" id="dialog-name" name="name" autocomplete="given-name" minlength="2" required>
+          <input class="order-form__input" id="dialog-name" name="name" autocomplete="given-name" minlength="2" required aria-describedby="dialog-name-error">
+          <p class="order-form__error" id="dialog-name-error" hidden></p>
         </div>
         <div class="order-form__field">
           <label class="order-form__label" for="dialog-email">
             E-mail
           </label>
-          <input class="order-form__input" id="dialog-email" name="email" type="email" autocomplete="email" required>
+          <input class="order-form__input" id="dialog-email" name="email" type="email" autocomplete="email" required aria-describedby="dialog-email-error">
+          <p class="order-form__error" id="dialog-email-error" hidden></p>
         </div>
         <div class="order-form__field">
           <label class="order-form__label" for="dialog-phone">
             Телефон
           </label>
-          <input class="order-form__input" id="dialog-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" aria-describedby="dialog-phone-hint" required>
+          <input class="order-form__input" id="dialog-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" aria-describedby="dialog-phone-hint dialog-phone-error" required>
           <small class="order-form__hint" id="dialog-phone-hint">
             Формат: +7 (900) 000-00-00
           </small>
+          <p class="order-form__error" id="dialog-phone-error" hidden></p>
         </div>
-        <div class="order-form__field">
+        <div class="order-form__field order-form__field--wide">
           <label class="order-form__label" for="dialog-comment">
             Комментарий (необязательно)
           </label>
-          <textarea class="order-form__textarea" id="dialog-comment" name="comment" rows="4">
-          </textarea>
+          <textarea class="order-form__textarea" id="dialog-comment" name="comment" rows="4"></textarea>
         </div>
-        <div class="order-form__field">
-          <input class="order-form__checkbox" id="dialog-agreement" name="agreement" type="checkbox" required>
+        <div class="order-form__field order-form__field--wide">
+          <input class="order-form__checkbox" id="dialog-agreement" name="agreement" type="checkbox" required aria-describedby="dialog-agreement-error">
           <label class="order-form__label order-form__label--inline" for="dialog-agreement">
             Я согласен на обработку данных
           </label>
+          <p class="order-form__error" id="dialog-agreement-error" hidden></p>
         </div>
         <div class="order-form__actions">
           <button class="button button--primary" type="submit">
@@ -268,8 +283,5 @@
         Закрыть
       </button>
     </dialog>
-    <a class="button button--primary back-to-top" href="#top" aria-label="Вернуться к началу страницы">
-      Наверх ↑
-    </a>
   </body>
 </html>

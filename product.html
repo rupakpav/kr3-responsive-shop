@@ -10,12 +10,14 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Характеристики мышей — mouseshop">
     <meta property="og:description" content="Описания и таблицы характеристик шести мышей mouseshop с переходом к заявке.">
-    <meta property="og:image" content="https://rupakpav.github.io/kr1-html-css-shop/images/preview.jpg">
+    <meta property="og:image" content="images/g305-960.jpg">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="js/main.js" defer>
     </script>
   </head>
   <body id="top">
+    <a class="skip-link" href="#main">Перейти к основному содержимому</a>
     <header class="site-header">
       <div class="site-header__inner">
         <a class="site-header__logo" href="index.html">
@@ -52,7 +54,7 @@
         </nav>
       </div>
     </header>
-    <main>
+    <main id="main" tabindex="-1">
       <nav class="breadcrumbs" aria-label="Хлебные крошки">
         <a class="breadcrumbs__link" href="index.html">
           Главная
@@ -89,9 +91,9 @@
       <div class="section">
         <article class="product-detail" id="g102">
           <figure class="product-detail__figure">
-            <img class="product-detail__image" src="images/g102.svg" alt="Условная иллюстрация Logitech G102" width="400" height="260">
+            <img class="product-detail__image" src="images/g102-480.jpg" srcset="images/g102-480.jpg 480w, images/g102-960.jpg 960w" sizes="(min-width: 1280px) 440px, (min-width: 900px) 36vw, (min-width: 768px) calc(100vw - 114px), calc(100vw - 66px)" alt="Чёрная мышь Logitech G102 на светлом фоне" width="960" height="720" loading="lazy">
             <figcaption class="product-detail__caption">
-              Схематическая иллюстрация, не фотография модели.
+              Фотография модели. Чёрный корпус.
             </figcaption>
           </figure>
           <div class="product-detail__content">
@@ -104,63 +106,65 @@
             <p class="product-detail__price">
               1 900 ₽
             </p>
-            <table class="product-table">
-              <caption class="product-table__caption">
-                Характеристики Logitech G102
-              </caption>
-              <thead>
-                <tr>
-                  <th class="product-table__cell" scope="col">
-                    Параметр
-                  </th>
-                  <th class="product-table__cell" scope="col">
-                    Значение
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Производитель
-                  </th>
-                  <td class="product-table__cell">
-                    Logitech
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Модель
-                  </th>
-                  <td class="product-table__cell">
-                    Logitech G102
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Категория
-                  </th>
-                  <td class="product-table__cell">
-                    Компьютерная мышь
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Подключение
-                  </th>
-                  <td class="product-table__cell">
-                    Проводное USB
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Учебная цена
-                  </th>
-                  <td class="product-table__cell">
-                    1 900 ₽
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper" role="region" aria-label="Характеристики Logitech G102: таблица с прокруткой" tabindex="0">
+              <table class="product-table">
+                <caption class="product-table__caption">
+                  Характеристики Logitech G102
+                </caption>
+                <thead>
+                  <tr>
+                    <th class="product-table__cell" scope="col">
+                      Параметр
+                    </th>
+                    <th class="product-table__cell" scope="col">
+                      Значение
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Производитель
+                    </th>
+                    <td class="product-table__cell">
+                      Logitech
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Модель
+                    </th>
+                    <td class="product-table__cell">
+                      Logitech G102
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Категория
+                    </th>
+                    <td class="product-table__cell">
+                      Компьютерная мышь
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Подключение
+                    </th>
+                    <td class="product-table__cell">
+                      Проводное USB
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Учебная цена
+                    </th>
+                    <td class="product-table__cell">
+                      1 900 ₽
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <a class="button button--primary" href="order.html?product=g102">
               Оставить заявку
             </a>
@@ -168,9 +172,9 @@
         </article>
         <article class="product-detail" id="deathadder">
           <figure class="product-detail__figure">
-            <img class="product-detail__image" src="images/deathadder.svg" alt="Условная иллюстрация Razer DeathAdder" width="400" height="260">
+            <img class="product-detail__image" src="images/deathadder-480.jpg" srcset="images/deathadder-480.jpg 480w, images/deathadder-960.jpg 960w" sizes="(min-width: 1280px) 440px, (min-width: 900px) 36vw, (min-width: 768px) calc(100vw - 114px), calc(100vw - 66px)" alt="Чёрная мышь Razer DeathAdder на светлом фоне" width="960" height="720" loading="lazy">
             <figcaption class="product-detail__caption">
-              Схематическая иллюстрация, не фотография модели.
+              Фотография модели. Чёрный корпус.
             </figcaption>
           </figure>
           <div class="product-detail__content">
@@ -183,63 +187,65 @@
             <p class="product-detail__price">
               2 900 ₽
             </p>
-            <table class="product-table">
-              <caption class="product-table__caption">
-                Характеристики Razer DeathAdder
-              </caption>
-              <thead>
-                <tr>
-                  <th class="product-table__cell" scope="col">
-                    Параметр
-                  </th>
-                  <th class="product-table__cell" scope="col">
-                    Значение
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Производитель
-                  </th>
-                  <td class="product-table__cell">
-                    Razer
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Модель
-                  </th>
-                  <td class="product-table__cell">
-                    Razer DeathAdder
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Категория
-                  </th>
-                  <td class="product-table__cell">
-                    Компьютерная мышь
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Подключение
-                  </th>
-                  <td class="product-table__cell">
-                    Проводное USB
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Учебная цена
-                  </th>
-                  <td class="product-table__cell">
-                    2 900 ₽
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper" role="region" aria-label="Характеристики Razer DeathAdder: таблица с прокруткой" tabindex="0">
+              <table class="product-table">
+                <caption class="product-table__caption">
+                  Характеристики Razer DeathAdder
+                </caption>
+                <thead>
+                  <tr>
+                    <th class="product-table__cell" scope="col">
+                      Параметр
+                    </th>
+                    <th class="product-table__cell" scope="col">
+                      Значение
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Производитель
+                    </th>
+                    <td class="product-table__cell">
+                      Razer
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Модель
+                    </th>
+                    <td class="product-table__cell">
+                      Razer DeathAdder
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Категория
+                    </th>
+                    <td class="product-table__cell">
+                      Компьютерная мышь
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Подключение
+                    </th>
+                    <td class="product-table__cell">
+                      Проводное USB
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Учебная цена
+                    </th>
+                    <td class="product-table__cell">
+                      2 900 ₽
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <a class="button button--primary" href="order.html?product=deathadder">
               Оставить заявку
             </a>
@@ -247,9 +253,9 @@
         </article>
         <article class="product-detail" id="rival-3">
           <figure class="product-detail__figure">
-            <img class="product-detail__image" src="images/rival-3.svg" alt="Условная иллюстрация SteelSeries Rival 3" width="400" height="260">
+            <img class="product-detail__image" src="images/rival-3-480.jpg" srcset="images/rival-3-480.jpg 480w, images/rival-3-960.jpg 960w" sizes="(min-width: 1280px) 440px, (min-width: 900px) 36vw, (min-width: 768px) calc(100vw - 114px), calc(100vw - 66px)" alt="Чёрная мышь SteelSeries Rival 3 на светлом фоне" width="960" height="720" loading="lazy">
             <figcaption class="product-detail__caption">
-              Схематическая иллюстрация, не фотография модели.
+              Фотография модели. Чёрный корпус.
             </figcaption>
           </figure>
           <div class="product-detail__content">
@@ -262,63 +268,65 @@
             <p class="product-detail__price">
               5 000 ₽
             </p>
-            <table class="product-table">
-              <caption class="product-table__caption">
-                Характеристики SteelSeries Rival 3
-              </caption>
-              <thead>
-                <tr>
-                  <th class="product-table__cell" scope="col">
-                    Параметр
-                  </th>
-                  <th class="product-table__cell" scope="col">
-                    Значение
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Производитель
-                  </th>
-                  <td class="product-table__cell">
-                    SteelSeries
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Модель
-                  </th>
-                  <td class="product-table__cell">
-                    SteelSeries Rival 3
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Категория
-                  </th>
-                  <td class="product-table__cell">
-                    Компьютерная мышь
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Подключение
-                  </th>
-                  <td class="product-table__cell">
-                    Проводное USB
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Учебная цена
-                  </th>
-                  <td class="product-table__cell">
-                    5 000 ₽
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper" role="region" aria-label="Характеристики SteelSeries Rival 3: таблица с прокруткой" tabindex="0">
+              <table class="product-table">
+                <caption class="product-table__caption">
+                  Характеристики SteelSeries Rival 3
+                </caption>
+                <thead>
+                  <tr>
+                    <th class="product-table__cell" scope="col">
+                      Параметр
+                    </th>
+                    <th class="product-table__cell" scope="col">
+                      Значение
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Производитель
+                    </th>
+                    <td class="product-table__cell">
+                      SteelSeries
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Модель
+                    </th>
+                    <td class="product-table__cell">
+                      SteelSeries Rival 3
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Категория
+                    </th>
+                    <td class="product-table__cell">
+                      Компьютерная мышь
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Подключение
+                    </th>
+                    <td class="product-table__cell">
+                      Проводное USB
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Учебная цена
+                    </th>
+                    <td class="product-table__cell">
+                      5 000 ₽
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <a class="button button--primary" href="order.html?product=rival-3">
               Оставить заявку
             </a>
@@ -326,9 +334,9 @@
         </article>
         <article class="product-detail" id="g305">
           <figure class="product-detail__figure">
-            <img class="product-detail__image" src="images/g305.svg" alt="Условная иллюстрация Logitech G305" width="400" height="260">
+            <img class="product-detail__image" src="images/g305-480.jpg" srcset="images/g305-480.jpg 480w, images/g305-960.jpg 960w" sizes="(min-width: 1280px) 440px, (min-width: 900px) 36vw, (min-width: 768px) calc(100vw - 114px), calc(100vw - 66px)" alt="Чёрная мышь Logitech G305 на светлом фоне" width="960" height="720" loading="lazy">
             <figcaption class="product-detail__caption">
-              Схематическая иллюстрация, не фотография модели.
+              Фотография модели. Чёрный корпус.
             </figcaption>
           </figure>
           <div class="product-detail__content">
@@ -341,63 +349,65 @@
             <p class="product-detail__price">
               3 900 ₽
             </p>
-            <table class="product-table">
-              <caption class="product-table__caption">
-                Характеристики Logitech G305
-              </caption>
-              <thead>
-                <tr>
-                  <th class="product-table__cell" scope="col">
-                    Параметр
-                  </th>
-                  <th class="product-table__cell" scope="col">
-                    Значение
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Производитель
-                  </th>
-                  <td class="product-table__cell">
-                    Logitech
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Модель
-                  </th>
-                  <td class="product-table__cell">
-                    Logitech G305
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Категория
-                  </th>
-                  <td class="product-table__cell">
-                    Компьютерная мышь
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Подключение
-                  </th>
-                  <td class="product-table__cell">
-                    Беспроводное LIGHTSPEED, USB-приёмник
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Учебная цена
-                  </th>
-                  <td class="product-table__cell">
-                    3 900 ₽
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper" role="region" aria-label="Характеристики Logitech G305: таблица с прокруткой" tabindex="0">
+              <table class="product-table">
+                <caption class="product-table__caption">
+                  Характеристики Logitech G305
+                </caption>
+                <thead>
+                  <tr>
+                    <th class="product-table__cell" scope="col">
+                      Параметр
+                    </th>
+                    <th class="product-table__cell" scope="col">
+                      Значение
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Производитель
+                    </th>
+                    <td class="product-table__cell">
+                      Logitech
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Модель
+                    </th>
+                    <td class="product-table__cell">
+                      Logitech G305
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Категория
+                    </th>
+                    <td class="product-table__cell">
+                      Компьютерная мышь
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Подключение
+                    </th>
+                    <td class="product-table__cell">
+                      Беспроводное LIGHTSPEED, USB-приёмник
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Учебная цена
+                    </th>
+                    <td class="product-table__cell">
+                      3 900 ₽
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <a class="button button--primary" href="order.html?product=g305">
               Оставить заявку
             </a>
@@ -405,9 +415,9 @@
         </article>
         <article class="product-detail" id="basilisk-v3">
           <figure class="product-detail__figure">
-            <img class="product-detail__image" src="images/basilisk-v3.svg" alt="Условная иллюстрация Razer Basilisk V3" width="400" height="260">
+            <img class="product-detail__image" src="images/basilisk-v3-480.jpg" srcset="images/basilisk-v3-480.jpg 480w, images/basilisk-v3-960.jpg 960w" sizes="(min-width: 1280px) 440px, (min-width: 900px) 36vw, (min-width: 768px) calc(100vw - 114px), calc(100vw - 66px)" alt="Чёрная мышь Razer Basilisk V3 на светлом фоне" width="960" height="720" loading="lazy">
             <figcaption class="product-detail__caption">
-              Схематическая иллюстрация, не фотография модели.
+              Фотография модели. Чёрный корпус.
             </figcaption>
           </figure>
           <div class="product-detail__content">
@@ -420,63 +430,65 @@
             <p class="product-detail__price">
               5 900 ₽
             </p>
-            <table class="product-table">
-              <caption class="product-table__caption">
-                Характеристики Razer Basilisk V3
-              </caption>
-              <thead>
-                <tr>
-                  <th class="product-table__cell" scope="col">
-                    Параметр
-                  </th>
-                  <th class="product-table__cell" scope="col">
-                    Значение
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Производитель
-                  </th>
-                  <td class="product-table__cell">
-                    Razer
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Модель
-                  </th>
-                  <td class="product-table__cell">
-                    Razer Basilisk V3
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Категория
-                  </th>
-                  <td class="product-table__cell">
-                    Компьютерная мышь
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Подключение
-                  </th>
-                  <td class="product-table__cell">
-                    Проводное USB
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Учебная цена
-                  </th>
-                  <td class="product-table__cell">
-                    5 900 ₽
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper" role="region" aria-label="Характеристики Razer Basilisk V3: таблица с прокруткой" tabindex="0">
+              <table class="product-table">
+                <caption class="product-table__caption">
+                  Характеристики Razer Basilisk V3
+                </caption>
+                <thead>
+                  <tr>
+                    <th class="product-table__cell" scope="col">
+                      Параметр
+                    </th>
+                    <th class="product-table__cell" scope="col">
+                      Значение
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Производитель
+                    </th>
+                    <td class="product-table__cell">
+                      Razer
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Модель
+                    </th>
+                    <td class="product-table__cell">
+                      Razer Basilisk V3
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Категория
+                    </th>
+                    <td class="product-table__cell">
+                      Компьютерная мышь
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Подключение
+                    </th>
+                    <td class="product-table__cell">
+                      Проводное USB
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Учебная цена
+                    </th>
+                    <td class="product-table__cell">
+                      5 900 ₽
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <a class="button button--primary" href="order.html?product=basilisk-v3">
               Оставить заявку
             </a>
@@ -484,9 +496,9 @@
         </article>
         <article class="product-detail" id="haste-2">
           <figure class="product-detail__figure">
-            <img class="product-detail__image" src="images/haste-2.svg" alt="Условная иллюстрация HyperX Pulsefire Haste 2" width="400" height="260">
+            <img class="product-detail__image" src="images/haste-2-480.jpg" srcset="images/haste-2-480.jpg 480w, images/haste-2-960.jpg 960w" sizes="(min-width: 1280px) 440px, (min-width: 900px) 36vw, (min-width: 768px) calc(100vw - 114px), calc(100vw - 66px)" alt="Чёрная мышь HyperX Pulsefire Haste 2 на светлом фоне" width="960" height="720" loading="lazy">
             <figcaption class="product-detail__caption">
-              Схематическая иллюстрация, не фотография модели.
+              Фотография модели. Чёрный корпус.
             </figcaption>
           </figure>
           <div class="product-detail__content">
@@ -499,69 +511,74 @@
             <p class="product-detail__price">
               6 900 ₽
             </p>
-            <table class="product-table">
-              <caption class="product-table__caption">
-                Характеристики HyperX Pulsefire Haste 2
-              </caption>
-              <thead>
-                <tr>
-                  <th class="product-table__cell" scope="col">
-                    Параметр
-                  </th>
-                  <th class="product-table__cell" scope="col">
-                    Значение
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Производитель
-                  </th>
-                  <td class="product-table__cell">
-                    HyperX
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Модель
-                  </th>
-                  <td class="product-table__cell">
-                    HyperX Pulsefire Haste 2
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Категория
-                  </th>
-                  <td class="product-table__cell">
-                    Компьютерная мышь
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Подключение
-                  </th>
-                  <td class="product-table__cell">
-                    Проводное USB
-                  </td>
-                </tr>
-                <tr>
-                  <th class="product-table__cell" scope="row">
-                    Учебная цена
-                  </th>
-                  <td class="product-table__cell">
-                    6 900 ₽
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-wrapper" role="region" aria-label="Характеристики HyperX Pulsefire Haste 2: таблица с прокруткой" tabindex="0">
+              <table class="product-table">
+                <caption class="product-table__caption">
+                  Характеристики HyperX Pulsefire Haste 2
+                </caption>
+                <thead>
+                  <tr>
+                    <th class="product-table__cell" scope="col">
+                      Параметр
+                    </th>
+                    <th class="product-table__cell" scope="col">
+                      Значение
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Производитель
+                    </th>
+                    <td class="product-table__cell">
+                      HyperX
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Модель
+                    </th>
+                    <td class="product-table__cell">
+                      HyperX Pulsefire Haste 2
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Категория
+                    </th>
+                    <td class="product-table__cell">
+                      Компьютерная мышь
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Подключение
+                    </th>
+                    <td class="product-table__cell">
+                      Проводное USB
+                    </td>
+                  </tr>
+                  <tr>
+                    <th class="product-table__cell" scope="row">
+                      Учебная цена
+                    </th>
+                    <td class="product-table__cell">
+                      6 900 ₽
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
             <a class="button button--primary" href="order.html?product=haste-2">
               Оставить заявку
             </a>
           </div>
         </article>
       </div>
+      <p class="success-message" role="status" tabindex="-1" hidden>
+        Заявка проверена успешно. Это учебная демонстрация: данные не отправлялись.
+      </p>
     </main>
     <footer class="site-footer" id="contacts">
       <p class="site-footer__text">
@@ -577,12 +594,9 @@
       <a href="order.html">
         Оставить заявку
       </a>
+      <a class="button button--primary back-to-top" href="#top">
+        Наверх ↑
+      </a>
     </footer>
-    <p class="success-message" role="status" tabindex="-1" hidden>
-      Заявка проверена успешно. Это учебная демонстрация: данные не отправлялись.
-    </p>
-    <a class="button button--primary back-to-top" href="#top" aria-label="Вернуться к началу страницы">
-      Наверх ↑
-    </a>
   </body>
 </html>
