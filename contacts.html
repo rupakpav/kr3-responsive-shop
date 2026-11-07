@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Контакты — mouseshop
+    </title>
+    <meta name="description" content="Контактная информация учебного магазина mouseshop и переход к форме заявки.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Контакты — mouseshop">
+    <meta property="og:description" content="Контактная информация учебного магазина mouseshop и переход к форме заявки.">
+    <meta property="og:image" content="https://rupakpav.github.io/kr1-html-css-shop/images/preview.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">
+          mouseshop
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="product.html">
+                Характеристики
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">
+                Заявка
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a class="breadcrumbs__link" href="index.html">
+          Главная
+        </a>
+        <span class="breadcrumbs__current" aria-current="page">
+          Контакты
+        </span>
+      </nav>
+      <section class="section">
+        <h1 class="section__title">
+          Контакты
+        </h1>
+        <p>
+          Контактные данные приведены для учебного проекта.
+        </p>
+        <ul class="contact-list">
+          <li class="contact-list__item">
+            Телефон: +7 (900) 000-00-00
+          </li>
+          <li class="contact-list__item">
+            E-mail: info@example.com
+          </li>
+          <li class="contact-list__item">
+            Адрес: г. Москва, учебный проект
+          </li>
+        </ul>
+      </section>
+      <section class="section" id="feedback">
+        <h2 class="section__title">
+          Обратная связь
+        </h2>
+        <p>
+          Выберите модель и укажите свой вопрос в комментарии к заявке.
+        </p>
+        <a class="button button--primary" href="order.html">
+          Перейти к форме заявки
+        </a>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <p class="site-footer__text">
+        © 2026 mouseshop · Учебный магазин компьютерных мышей
+      </p>
+      <p class="site-footer__text">
+        Все цены учебные. Оформление заявки демонстрационное.
+      </p>
+      <a href="contacts.html">
+        Контакты
+      </a>
+      ·
+      <a href="order.html">
+        Оставить заявку
+      </a>
+    </footer>
+    <p class="success-message" role="status" tabindex="-1" hidden>
+      Заявка проверена успешно. Это учебная демонстрация: данные не отправлялись.
+    </p>
+    <a class="button button--primary back-to-top" href="#top" aria-label="Вернуться к началу страницы">
+      Наверх ↑
+    </a>
+  </body>
+</html>

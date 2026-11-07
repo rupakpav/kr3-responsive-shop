@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Каталог мышей — mouseshop
+    </title>
+    <meta name="description" content="Шесть моделей мышей Logitech, Razer, SteelSeries и HyperX: описание, учебные цены и заявка.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Каталог мышей — mouseshop">
+    <meta property="og:description" content="Шесть моделей мышей Logitech, Razer, SteelSeries и HyperX: описание, учебные цены и заявка.">
+    <meta property="og:image" content="https://rupakpav.github.io/kr1-html-css-shop/images/preview.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">
+          mouseshop
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">
+                Каталог
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="product.html">
+                Характеристики
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="order.html">
+                Заявка
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a class="breadcrumbs__link" href="index.html">
+          Главная
+        </a>
+        <span class="breadcrumbs__current" aria-current="page">
+          Каталог мышей
+        </span>
+      </nav>
+      <section class="section">
+        <h1 class="section__title">
+          Каталог мышей
+        </h1>
+        <p>
+          Шесть моделей для работы и игр. Цены указаны для учебного проекта.
+        </p>
+      </section>
+      <div class="catalog-layout">
+        <aside class="catalog-filters">
+          <h2 class="catalog-filters__title">
+            Фильтры
+          </h2>
+          <p class="catalog-filters__hint" id="filters-hint">
+            Учебный макет: фильтрация не подключена.
+          </p>
+          <form class="catalog-filters__form" aria-describedby="filters-hint">
+            <fieldset class="catalog-filters__group">
+              <legend class="catalog-filters__legend">
+                Подключение
+              </legend>
+              <label class="catalog-filters__label">
+                <input type="checkbox" name="connection" value="wired">
+                Проводное
+              </label>
+              <label class="catalog-filters__label">
+                <input type="checkbox" name="connection" value="wireless">
+                Беспроводное
+              </label>
+            </fieldset>
+            <fieldset class="catalog-filters__group">
+              <legend class="catalog-filters__legend">
+                Цена, ₽
+              </legend>
+              <label class="catalog-filters__label" for="price-from">
+                От
+              </label>
+              <input class="catalog-filters__input" id="price-from" type="number" name="price-from" min="0" placeholder="0">
+              <label class="catalog-filters__label" for="price-to">
+                До
+              </label>
+              <input class="catalog-filters__input" id="price-to" type="number" name="price-to" min="0" placeholder="6900">
+            </fieldset>
+            <button class="button button--primary" type="button" disabled>
+              Применить фильтры
+            </button>
+          </form>
+        </aside>
+        <section class="catalog-layout__products">
+          <h2 class="catalog-layout__title">
+            Все модели
+          </h2>
+          <div class="products-grid">
+            <article class="product-card">
+              <img class="product-card__image" src="images/g102.svg" alt="Условная иллюстрация мыши Logitech G102" width="400" height="260" loading="lazy">
+              <h3 class="product-card__title">
+                Logitech G102
+              </h3>
+              <p class="product-card__description">
+                Проводная мышь для повседневной работы и динамичных игр.
+              </p>
+              <p class="product-card__price">
+                1 900 ₽
+              </p>
+              <div class="product-card__actions">
+                <a class="button button--primary" href="product.html#g102">
+                  Подробнее
+                </a>
+                <a class="button button--secondary" href="order.html?product=g102">
+                  Заказать
+                </a>
+              </div>
+            </article>
+            <article class="product-card">
+              <img class="product-card__image" src="images/deathadder.svg" alt="Условная иллюстрация мыши Razer DeathAdder" width="400" height="260" loading="lazy">
+              <h3 class="product-card__title">
+                Razer DeathAdder
+              </h3>
+              <p class="product-card__description">
+                Игровая мышь с удобной формой для длительных игровых сессий.
+              </p>
+              <p class="product-card__price">
+                2 900 ₽
+              </p>
+              <div class="product-card__actions">
+                <a class="button button--primary" href="product.html#deathadder">
+                  Подробнее
+                </a>
+                <a class="button button--secondary" href="order.html?product=deathadder">
+                  Заказать
+                </a>
+              </div>
+            </article>
+            <article class="product-card">
+              <img class="product-card__image" src="images/rival-3.svg" alt="Условная иллюстрация мыши SteelSeries Rival 3" width="400" height="260" loading="lazy">
+              <h3 class="product-card__title">
+                SteelSeries Rival 3
+              </h3>
+              <p class="product-card__description">
+                Игровая мышь с лаконичным дизайном для точного управления.
+              </p>
+              <p class="product-card__price">
+                5 000 ₽
+              </p>
+              <div class="product-card__actions">
+                <a class="button button--primary" href="product.html#rival-3">
+                  Подробнее
+                </a>
+                <a class="button button--secondary" href="order.html?product=rival-3">
+                  Заказать
+                </a>
+              </div>
+            </article>
+            <article class="product-card product-card--new">
+              <span class="product-card__badge">
+                Новинка каталога
+              </span>
+              <img class="product-card__image" src="images/g305.svg" alt="Условная иллюстрация мыши Logitech G305" width="400" height="260" loading="lazy">
+              <h3 class="product-card__title">
+                Logitech G305
+              </h3>
+              <p class="product-card__description">
+                Беспроводная мышь с подключением LIGHTSPEED для свободного движения.
+              </p>
+              <p class="product-card__price">
+                3 900 ₽
+              </p>
+              <div class="product-card__actions">
+                <a class="button button--primary" href="product.html#g305">
+                  Подробнее
+                </a>
+                <a class="button button--secondary" href="order.html?product=g305">
+                  Заказать
+                </a>
+              </div>
+            </article>
+            <article class="product-card product-card--new">
+              <span class="product-card__badge">
+                Новинка каталога
+              </span>
+              <img class="product-card__image" src="images/basilisk-v3.svg" alt="Условная иллюстрация мыши Razer Basilisk V3" width="400" height="260" loading="lazy">
+              <h3 class="product-card__title">
+                Razer Basilisk V3
+              </h3>
+              <p class="product-card__description">
+                Проводная игровая мышь с настраиваемыми кнопками и колесом прокрутки.
+              </p>
+              <p class="product-card__price">
+                5 900 ₽
+              </p>
+              <div class="product-card__actions">
+                <a class="button button--primary" href="product.html#basilisk-v3">
+                  Подробнее
+                </a>
+                <a class="button button--secondary" href="order.html?product=basilisk-v3">
+                  Заказать
+                </a>
+              </div>
+            </article>
+            <article class="product-card product-card--new">
+              <span class="product-card__badge">
+                Новинка каталога
+              </span>
+              <img class="product-card__image" src="images/haste-2.svg" alt="Условная иллюстрация мыши HyperX Pulsefire Haste 2" width="400" height="260" loading="lazy">
+              <h3 class="product-card__title">
+                HyperX Pulsefire Haste 2
+              </h3>
+              <p class="product-card__description">
+                Лёгкая проводная мышь для быстрых движений и соревновательных игр.
+              </p>
+              <p class="product-card__price">
+                6 900 ₽
+              </p>
+              <div class="product-card__actions">
+                <a class="button button--primary" href="product.html#haste-2">
+                  Подробнее
+                </a>
+                <a class="button button--secondary" href="order.html?product=haste-2">
+                  Заказать
+                </a>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <p class="site-footer__text">
+        © 2026 mouseshop · Учебный магазин компьютерных мышей
+      </p>
+      <p class="site-footer__text">
+        Все цены учебные. Оформление заявки демонстрационное.
+      </p>
+      <a href="contacts.html">
+        Контакты
+      </a>
+      ·
+      <a href="order.html">
+        Оставить заявку
+      </a>
+    </footer>
+    <p class="success-message" role="status" tabindex="-1" hidden>
+      Заявка проверена успешно. Это учебная демонстрация: данные не отправлялись.
+    </p>
+    <a class="button button--primary back-to-top" href="#top" aria-label="Вернуться к началу страницы">
+      Наверх ↑
+    </a>
+  </body>
+</html>

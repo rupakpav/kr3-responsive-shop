@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+      Оформление заявки — mouseshop
+    </title>
+    <meta name="description" content="Учебная форма заявки mouseshop: выберите мышь и укажите контактные данные.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Оформление заявки — mouseshop">
+    <meta property="og:description" content="Учебная форма заявки mouseshop: выберите мышь и укажите контактные данные.">
+    <meta property="og:image" content="https://rupakpav.github.io/kr1-html-css-shop/images/preview.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer>
+    </script>
+  </head>
+  <body id="top">
+    <header class="site-header">
+      <div class="site-header__inner">
+        <a class="site-header__logo" href="index.html">
+          mouseshop
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="product.html">
+                Характеристики
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">
+                Заявка
+              </a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a class="breadcrumbs__link" href="index.html">
+          Главная
+        </a>
+        <span class="breadcrumbs__current" aria-current="page">
+          Оформление заявки
+        </span>
+      </nav>
+      <section class="section section--form">
+        <h1 class="section__title">
+          Оформление заявки
+        </h1>
+        <form class="order-form" action="#" method="post" novalidate>
+          <p class="order-form__hint">
+            Учебная форма: данные не отправляются на сервер. Все поля, кроме комментария, обязательны.
+          </p>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-product">
+              Товар
+            </label>
+            <select class="order-form__select" id="order-product" name="product" required>
+              <option value="">
+                Выберите мышь
+              </option>
+              <option value="g102">
+                Logitech G102
+              </option>
+              <option value="deathadder">
+                Razer DeathAdder
+              </option>
+              <option value="rival-3">
+                SteelSeries Rival 3
+              </option>
+              <option value="g305">
+                Logitech G305
+              </option>
+              <option value="basilisk-v3">
+                Razer Basilisk V3
+              </option>
+              <option value="haste-2">
+                HyperX Pulsefire Haste 2
+              </option>
+            </select>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-name">
+              Имя
+            </label>
+            <input class="order-form__input" id="order-name" name="name" autocomplete="given-name" minlength="2" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-email">
+              E-mail
+            </label>
+            <input class="order-form__input" id="order-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-phone">
+              Телефон
+            </label>
+            <input class="order-form__input" id="order-phone" name="phone" type="tel" autocomplete="tel" placeholder="+7 (900) 000-00-00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" aria-describedby="order-phone-hint" required>
+            <small class="order-form__hint" id="order-phone-hint">
+              Формат: +7 (900) 000-00-00
+            </small>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="order-comment">
+              Комментарий (необязательно)
+            </label>
+            <textarea class="order-form__textarea" id="order-comment" name="comment" rows="4">
+            </textarea>
+          </div>
+          <div class="order-form__field">
+            <input class="order-form__checkbox" id="order-agreement" name="agreement" type="checkbox" required>
+            <label class="order-form__label order-form__label--inline" for="order-agreement">
+              Я согласен на обработку данных
+            </label>
+          </div>
+          <div class="order-form__actions">
+            <button class="button button--primary" type="submit">
+              Отправить заявку
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <p class="site-footer__text">
+        © 2026 mouseshop · Учебный магазин компьютерных мышей
+      </p>
+      <p class="site-footer__text">
+        Все цены учебные. Оформление заявки демонстрационное.
+      </p>
+      <a href="contacts.html">
+        Контакты
+      </a>
+      ·
+      <a href="order.html">
+        Оставить заявку
+      </a>
+    </footer>
+    <p class="success-message" role="status" tabindex="-1" hidden>
+      Заявка проверена успешно. Это учебная демонстрация: данные не отправлялись.
+    </p>
+    <a class="button button--primary back-to-top" href="#top" aria-label="Вернуться к началу страницы">
+      Наверх ↑
+    </a>
+  </body>
+</html>
